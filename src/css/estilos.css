@@ -11,6 +11,8 @@ body {
 	background-size: 120% 120%;
 }
 
+@import url(//fonts.googleapis.com/css?family=Vibur);
+
 .cabecalho {
 	display: flex;
 	justify-content: space-between;
@@ -200,6 +202,60 @@ body {
 
 .projetos .btn-mostrar-projetos.remover {
 	display: none;
+}
+
+.nome b {
+	color: rgb(255, 255, 255);
+	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #00ffff, 0 0 0.5em #007474, 0 0 0.1em #33b3ac, 0 10px 3px #000;
+}
+
+.nome b span {
+	animation: blink linear infinite 2s;
+}
+
+.nome b span:nth-of-type(2) {
+	animation: blink linear infinite 3s;
+}
+
+@keyframes blink {
+	78% {
+		color: inherit;
+		text-shadow: inherit;
+	}
+
+	79% {
+		color: #333;
+	}
+
+	80% {
+
+		text-shadow: none;
+	}
+
+	81% {
+		color: inherit;
+		text-shadow: inherit;
+	}
+
+	82% {
+		color: #333;
+		text-shadow: none;
+	}
+
+	83% {
+		color: inherit;
+		text-shadow: inherit;
+	}
+
+	92% {
+		color: #333;
+		text-shadow: none;
+	}
+
+	92.5% {
+		color: inherit;
+		text-shadow: inherit;
+	}
 }
 
 @keyframes gradient-animation {
